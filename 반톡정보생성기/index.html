@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ffffff">
+  <title>반톡 정보 생성기</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+  <header>
+    <h1>📋 반톡 정보 생성기</h1>
+    <p>강화고등학교 · 2학년 1반</p>
+  </header>
+
+  <section class="card">
+    <h2>공지사항📣</h2>
+
+    <textarea
+      id="notice"
+      placeholder="공지사항을 입력하세요&#10;예: 수요일 모의고사"
+    ></textarea>
+
+    <button id="loadBtn">
+      내일 정보 불러오기
+    </button>
+
+    <p id="status"></p>
+  </section>
+
+
+  <section class="card">
+
+    <div class="result-header">
+      <h2>완성된 문구</h2>
+
+      <button id="copyBtn" class="copy-btn">
+        📋 복사
+      </button>
+    </div>
+
+    <pre id="result">공지사항📣
+- 
+
+내일 시간표
+불러오는 중...
+
+내일 급식🍚
+불러오는 중...</pre>
+
+  </section>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
